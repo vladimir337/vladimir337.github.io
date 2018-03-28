@@ -1,0 +1,327 @@
+body {
+    background-color: #e1f0f8;
+    font-family: "Arial", regular;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    width: 96%;    
+    max-width: 1145px;
+    margin: auto;
+    padding: 0%;
+
+}
+
+header {
+    width: 1145px;
+    display: block;
+    margin: auto;
+    background-color: #ffffff;
+}
+
+.header-logo {
+    padding-left: 25px;
+    padding-top: 20px;
+}
+
+.header-button {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 540px;
+    top: -40px;
+}
+
+.header-button a {
+    color: #f36240;
+    font-size: 23px;
+}
+
+.header-number p{
+    text-align: right;
+    display: block;
+    font-size: 16px;
+    float: right;
+    position: relative;
+    top: -180px; 
+    padding-right: 25px;
+    color: #484745;
+}
+
+.header-number span {
+    font-size: 31px;
+}
+
+.header-menu ul {
+    list-style: none;
+    height: 55px;
+    margin: 0;
+    padding: 0;
+}
+
+.header-menu a {
+    color: #6e767f;
+    text-decoration: none;
+    display: block;
+    font-size: 24px;
+    border-left: 1px solid #5f6973;
+    padding: 14px 57px 13px 57px;
+}
+
+.header-menu li {
+    float: left;
+}
+
+.header-menu li.active a{
+    background-color: #7bc3d5;
+    color: #ffffff;
+}
+
+ul li:first-child a{
+    border: none;
+}
+
+main {
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+main h1 {
+    padding-top: 40px;
+    font-size: 64px;
+    margin: 0;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+
+main h2 {
+    font-size: 26px;
+    margin: 0;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+
+main span {
+    font-size: 20px;
+    margin: 0;
+    font-weight: normal;
+}
+
+main nav {
+    display: block;
+    border-radius: 5px;
+    float: left;
+    width: 215px;
+    background-color: #ffffff;
+    padding-left: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+main nav li {
+    list-style: none;
+    margin-left: -40px;
+    padding: 10px 0px;
+}
+
+main nav li a {
+    margin: 0;
+    padding: 0;
+    color: #8a8a8a;
+    font-size: 16px;
+}
+
+main nav li a:hover {
+    color: #eb5825;
+}
+
+main section h2 {
+    font-weight: normal;
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+
+main section {
+    border-radius: 5px;
+    background-color: #ffffff;
+    width: 855px;
+    display: inline-block;
+    margin-left: 25px;
+    padding-left: 25px;
+    padding-top: 20px;
+}
+
+main section figure{
+    padding-left: 55px;
+    float: left;
+    text-align: center;
+    margin-bottom: 110px;
+    margin-right: 80px;
+}
+main section figure figcaption {
+    padding-top: 20px;
+    color: #8a8a8a;
+}
+
+
+main section ul li {
+    color: #ec6434;
+    padding-bottom: 15px;
+}
+
+main section li span {
+    color: #484848;
+    font-size: 14px;
+}
+
+main section>span {
+    font-size: 20px;
+    margin-left: -20px;
+    padding: 0px;
+}
+
+main section img {
+    margin-top: 20px;
+    margin-left: -20px;
+}
+
+main>section>p {
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: -20px;
+    margin-bottom: 40px;
+}
+
+main section input {
+    height: 45px;
+    border-radius: 5px;
+    background-color: #eb5825;
+    border: none;
+    color: #ffffff;
+    font-size: 18px;
+    margin-left: -20px;
+    padding: 10px 40px;
+    margin-bottom: 10px;
+}
+
+main section input:hover {
+    cursor: pointer;
+}
+
+main section a {
+    color: #8a8a8a;
+    margin-left: -20px;
+    font-size: 14px;
+}
+
+.features {
+    border-radius: 5px;
+    background-color: #ffffff;
+    width: 855px;
+    display: block;
+    margin-left: 265px;
+    padding-left: 25px;
+}
+
+.features h4 {
+    font-size: 26px;
+    font-weight: normal;
+    margin-top: 25px;
+    padding-top: 25px;
+}
+
+.features img {
+    float: left;
+    margin-right: 30px;
+}
+
+.features img.steps {
+    position: relative;
+    top: 4px;
+}
+
+.features p {
+    font-size: 14px;
+}
+
+.features p:last-child {
+    padding-bottom: 50px;
+}
+
+footer {
+    width: 855px;
+    display: block;
+    margin-left: 265px;
+}
+
+footer h4 {
+    font-size: 26px;
+    font-weight: normal;
+}
+
+footer a.to-all-reviews{
+    font-size: 16px;
+    color: #eb5825;
+    float: right;
+    display: inline-block;
+    position: relative;
+    top: -55px;
+    right: -15px;
+}
+
+footer .reviews {
+    border-radius: 5px;
+    background-color: #ffffff;
+    width: 855px;
+    display: block;
+    padding-top: 20px;
+    padding-left: 25px;
+    margin-bottom: 30px;
+}
+
+.reviews cite {
+    font-style: normal;
+    font-size: 16px;
+}
+
+.reviews blockquote {
+    margin: 0;
+}
+
+.reviews span, p {
+    font-size: 14px;
+    color: #8a8a8a;
+}
+
+.reviews a {
+    padding-top: 10px;
+    color: #eb5825;
+}
+
+.reviews a img {
+    padding-right: 5px;
+    position: relative;
+    top: 2px;
+}
+
+.reviews input {
+    padding-left: 25px;
+    margin-top: 30px;
+    height: 45px;
+    border-radius: 5px;
+    background-color: #eb5825;
+    border: none;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 10px 40px;
+    margin-bottom: 30px;
+}
+
+
+.reviews input:hover {
+    cursor: pointer;
+}
