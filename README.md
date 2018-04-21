@@ -4,5 +4,5 @@
 Пример адаптивного сайта:
 # vladimir337.github.io/adaptiv_example
 
-Пример сайта на блочной вертске с адаптивом:
+Пример лендинга на блочкой верстке:
 # vladimir337.github.io/landing
