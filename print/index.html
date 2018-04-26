@@ -1,1 +1,621 @@
-fff
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>Широкоформатная печать</title>
+	<meta name="description" content="Широкофрматная печать" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid-3.3.1.min.css" />
+	<link rel="stylesheet" href="libs/font-awesome-4.2.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
+	<link rel="stylesheet" href="libs/slick/slick.css">
+	<link rel="stylesheet" href="libs/slick/slick-theme.css">
+	<link rel="stylesheet" href="libs/countdown/jquery.countdown.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="libs/animate.min.css" />
+	<script type="text/javascript" src="libs/jquery/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+	<script type="text/javascript">
+        
+     function look(type)
+      {
+       param=document.getElementById(type);
+       if(param.style.display == "none") param.style.display = "block";
+       else param.style.display = "none"
+      }
+   function addFav() {
+  var title = document.title,
+    url = document.location,
+    UA = navigator.userAgent.toLowerCase(),
+    isFF = UA.indexOf('firefox') != -1,
+    isMac = UA.indexOf('mac') != -1,
+    isWebkit = UA.indexOf('webkit') != -1,
+    isIE = UA.indexOf('.net') != -1;
+
+  if ((isIE || isFF) && window.external) { // IE, Firefox
+    window.external.AddFavorite(url, title);
+    return false;
+  }
+
+  if (isMac || isWebkit) { // Webkit (Chrome, Opera), Mac
+    document.getElementById('AddFavViaSheens').innerHTML = 'Нажмите "' + (isMac ? 'Command/Cmd' : 'Ctrl') + ' + D" для добавления страницы в закладки';
+    return false;
+  }
+}
+        
+function videoplay(button) {
+    var par = button.parentNode;
+    par.innerHTML = '<iframe src="https://www.youtube.com/embed/-_UEVLb2XSg?autoplay=1" scrolling="no" style="width: 100%; height: 100%;"></iframe>';
+}
+     </script>
+</head>
+<body>
+		
+
+<header class=top>
+	<div class="wrapper">
+		<div class="container">
+		<div class="row">
+		   <div class="top-menu">
+		       <div class="col-md-9">
+		           <nav class="navigation">
+                        <ul class="menu">
+                            <li class="menu-item"><a href="#">О компании</a></li>
+		                      <li class="menu-item"><a href="#">Портфолио</a></li>
+		                       <li class="menu-item"><a href="#">Сотрудничество</a></li>
+		                       <li class="menu-item"><a href="#">Требования к макету</a></li>
+		                       <li class="menu-item"><a href="#">Контакты</a></li>
+                        </ul>
+                       </nav>
+		           </div>
+		           <div class="col-md-3">
+		               <div class="button">
+                           <a id="fav" href="http://yandex.ru" rel="sidebar" title="Широкоформатная печать" onclick="addFav()"><img src="img/star.png">Добавить сайт в закладки</a>
+		               </div>
+		           </div>
+		       </div>
+		</div> 
+        </div>
+        </div>
+</header>
+
+
+<header class="middle">    
+        <div class="wrapper">
+		<div class="container">
+		<div class="row">
+		   <div class="top-middle-menu">
+		       <div class="col-md-2">
+                   <div class="logo">
+                   </div>
+		      </div>
+		      <div class="col-md-1">
+		           <div class="icons-tel">
+		           </div>
+		      </div>
+		          <div class="col-md-3">
+		              <div class="tel">
+		              <span class="number">+7 (495) 241-96-37</span><br>
+		              <span class="worktime">Пн-Сб 10:00—19:00   Вс — выходной</span>
+		              </div> 
+		           </div>
+		          <div class="col-md-1">
+		              <div class="icons-map">
+		              </div>
+		          </div>
+		          <div class="col-md-3">
+		              <div class="adress">
+		              <span class="metro-station">Москва, м. Дубровка</span><br>
+		              <span class="street">ул. Шарикоподшипниковская, д. 13</span>
+		              </div> 
+		           </div>
+		           <div class="col-md-2">
+		               <button>Срочный заказ</button>
+		           </div>
+		      </div>
+		</div> 
+        </div>
+        </div>
+</header>
+
+<header class="bottom">
+    <div class="wrapper">
+		<div class="container">
+		<div class="row">
+		   <div class="top-bottom-menu">
+		       <div class="col-md-3">
+                   <span>Ваш заказ уже сегодня</span>
+		      </div>
+		          <div class="col-md-3">
+		              <div class="e-mail">
+		              <a href="#">7292554@mail.ru</a>
+		              </div> 
+		           </div>
+		           <div class="col-md-1">
+		               
+		           </div>
+		          <div class="col-md-3">
+		              <div class="map">
+		              <a href="#map">Как нас найти</a>
+		              </div>
+		          </div>
+		           <div class="col-md-2">
+		               <div class="question">
+		              <a href="#">Задать вопрос</a>
+		              </div>
+		           </div>
+		      </div>
+		</div> 
+        </div>
+        </div>
+</header>
+
+<main>
+    <div class="wrapper">
+    <div class="container">
+    <div class="row">
+    <div class="top-menu">
+       <nav class="navbar">
+                   <ul>
+                        <div class="col-md-4">
+                           <li class="menu-list"><a href="#">
+                           <span class="text">Печатная продукция<img src="img/arrow.png"></span>
+           </a>
+           </li>
+        </div>
+        <div class="col-md-3">
+         <li class="menu-list">
+           <a href="#">
+               <span class="text">Услуги<img src="img/arrow.png"></span>
+           </a>
+         </li>
+        </div>
+        <div class="col-md-5">
+          <li class="menu-list">
+           <a href="#">
+               <span class="text">Наружная и интерьерная реклама<img src="img/arrow.png"></span>
+           </a>
+           </li>
+        </div>
+        </ul>
+        </nav>
+    </div>
+    </div>
+    </div>
+    </div>
+    <section>
+        <div class="wrapper">
+        <div class="container">
+            <div class="row">
+                <h1>
+                    Широкоформатная печать
+                </h1>
+                <div class="types-print">
+                    <div class="col-md-2">
+                    <div class="fixed-menu">
+                    <ul>
+                        <a href="#variaties"><li>Виды печати</li></a>
+                        <a href="#price"><li>Стоимость</li></a>
+                        <a href="#options"><li>Оплата и доставка</li></a>
+                        <a href=".answers"><li>Вопрос-ответ</li></a>
+                        <a href=".request-form"><li>Заказать онлайн</li></a>
+                    </ul>
+                </div>
+                    </div>
+                    <div class="col-md-3">
+                        <span>Все виды<br>широкоформатной<br>печати</span>
+                    </div>
+                    <div class="col-md-1">
+                    </div>
+                    <div class="col-md-3">
+                        <ul>
+                            <li><img src="img/checkbox.png"> Растяжки</li>
+                            <li><img src="img/checkbox.png"> Световые короба</li>
+                            <li><img src="img/checkbox.png"> Вывески</li>
+                            <li><img src="img/checkbox.png"> Штендеры</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <span class="number">+7 (495) 241-96-37</span>
+                        <button>Оформить онлайн</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+</main>
+<div class="popular-items wow bounceInUp" id="variaties">
+        <div class="wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-10"><h2>Популярные тиражи</h2></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-3">
+                        <a href="#">
+                            <h4>Растяжки</h4>
+                            <img src="img/rastyazhki.png">
+                            <div class="popular-item-cont">
+                                <button>Посмотреть</button>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="#">
+                            <h4>Плакаты</h4>
+                            <img src="img/plakaty.png">
+                            <div class="popular-item-cont">
+                                <button>Посмотреть</button>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="#">
+                            <h4>Пресс-волы</h4>
+                            <img src="img/press-wall.png">
+                            <div class="popular-item-cont">
+                                <button>Посмотреть</button>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-3">
+                        <a href="#">
+                            <h4>Штендеры</h4>
+                            <img src="img/shtenders.png">
+                            <div class="popular-item-cont">
+                                <button>Посмотреть</button>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="#">
+                            <h4>Ролл-апы</h4>
+                            <img src="img/roll-up.png">
+                            <div class="popular-item-cont">
+                                <button>Посмотреть</button>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="#">
+                            <h4>Лайтбоксы</h4>
+                            <img src="img/lightbox.png">
+                            <div class="popular-item-cont">
+                                <button>Посмотреть</button>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-3">
+                        <a href="#">
+                            <h4>Стенды</h4>
+                            <img src="img/stands.png">
+                            <div class="popular-item-cont">
+                                <button>Посмотреть</button>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                       <h4 style="visibility: hidden">Оформить заказ</h4>
+                        <button class="order"><span>Оформить<br>индивидуальный<br>заказ</span>
+                        <img src="img/go-to-order.png"></button>
+                    </div>
+                    <div class="col-md-3">
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+            </div>
+        </div>
+</div> 
+<div class="price wow bounceInUp" id="price">
+    <div class="wrapper">
+        <div class="container">
+            <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-10"><h2>Стоимость</h2></div>
+            </div>
+            <div class="row">
+             <div class="col-md-2"></div>
+             <div class="col-md-3 header-table" style="margin-left: 15px"><h5>Материал</h5></div>
+             <div class="col-md-2 header-table"><h5>360 dpi</h5></div>   
+             <div class="col-md-1 header-table"><h5>540 dpi</h5></div>
+             <div class="col-md-2 header-table"><h5>720 dpi</h5></div>
+             <div class="col-md-1 header-table"><h5>1440 dpi</h5></div>
+             <div class="col-md-1"></div>
+            </div>
+            <div class="row">
+             <div class="col-md-2"></div>
+             <div class="col-md-3 td-dark" style="margin-left: 15px"><span>Китай 440</span></div>
+             <div class="col-md-2 td-dark"><span>240</span></div>   
+             <div class="col-md-1 td-dark"><span>250</span></div>
+             <div class="col-md-2 td-dark"><span>250</span></div>
+             <div class="col-md-1 td-dark"><span>645</span></div>
+             <div class="col-md-1"></div>
+            </div>
+            <div class="row">
+             <div class="col-md-2"></div>
+             <div class="col-md-3 td-light" style="margin-left: 15px"><span>Европа 440</span></div>
+             <div class="col-md-2 td-light"><span>260</span></div>   
+             <div class="col-md-1 td-light"><span>295</span></div>
+             <div class="col-md-2 td-light"><span>388</span></div>
+             <div class="col-md-1 td-light"><span>760</span></div>
+             <div class="col-md-1"></div>
+            </div>
+            <div class="row">
+             <div class="col-md-2"></div>
+             <div class="col-md-3 td-dark" style="margin-left: 15px"><span>Европа 510</span></div>
+             <div class="col-md-2 td-dark"><span>240</span></div>   
+             <div class="col-md-1 td-dark"><span>250</span></div>
+             <div class="col-md-2 td-dark"><span>250</span></div>
+             <div class="col-md-1 td-dark"><span>645</span></div>
+             <div class="col-md-1"></div>
+            </div>
+            <div class="row">
+             <div class="col-md-2"></div>
+             <div class="col-md-3 td-light" style="margin-left: 15px"><span>Банерная сетка</span></div>
+             <div class="col-md-2 td-light"><span>260</span></div>   
+             <div class="col-md-1 td-light"><span>295</span></div>
+             <div class="col-md-2 td-light"><span>388</span></div>
+             <div class="col-md-1 td-light"><span>760</span></div>
+             <div class="col-md-1"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="video">
+   <div class="wrapper">
+        <div class="container">
+            <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-9">
+                <div class="video1">
+                <div class="video1-play" onclick="videoplay(this);"></div>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-1"></div>
+            </div>
+       </div>
+    </div>
+<div class="options" id="options">
+    <div class="wrapper">
+        <div class="container">
+            <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-6"><span>Варианты оплаты</span></div>
+            <div class="col-md-3"><span>Варианты доставки</span></div>
+            </div>
+            <div class="row">
+               <div class="col-md-2"></div>
+                <div class="col-md-1 wow bounceInLeft">
+                      <div class="circle">
+                       <img src="img/purse.png" alt="">
+                   </div>
+                </div> 
+                <div class="col-md-2 wow pulse" data-wow-duration="1.2s"><span class="variaties">Оплатить<br>в офисе</span></div>
+            <div class="col-md-1 wow bounceInLeft" data-wow-duration="1.2s">
+                      <div class="circle">
+                       <img src="img/beznal.png" alt="">
+                   </div>
+                </div> 
+                <div class="col-md-2 wow pulse" data-wow-duration="1.2s"><span class="variaties">Оплатить по<br>расчетному<br>счету</span></div>
+            <div class="col-md-1 wow bounceInLeft" data-wow-duration="1.2s">
+                      <div class="circle">
+                       <img src="img/watch.png" alt="">
+                   </div>
+                </div> 
+                <div class="col-md-2 wow pulse" data-wow-duration="1.2s"><span class="operating-time">Самовывоз из<br>офиса по графику:<br>Пн-Сб: с 10-00 до<br>19-00</span></div>
+            </div>
+            <div class="row">
+               <div class="col-md-2"></div>
+                <div class="col-md-1 wow bounceInLeft" data-wow-duration="1.2s">
+                      <div class="circle">
+                       <img src="img/card.png" alt="">
+                   </div>
+                </div> 
+                <div class="col-md-2 wow pulse" data-wow-duration="1.2s"><span class="variaties">Оплатить<br>по карте</span></div>
+            <div class="col-md-1 wow bounceInLeft" data-wow-duration="1.2s">
+                      <div class="circle">
+                       <img src="img/mouse.png" alt="">
+                   </div>
+                </div> 
+                <div class="col-md-2 wow pulse" data-wow-duration="1.2s"><span class="variaties">Оплатить<br>онлайн</span></div>
+            <div class="col-md-1 wow bounceInLeft" data-wow-duration="1.2s">
+                      <div class="circle">
+                       <img class="delivery" src="img/delivery.png" alt="">
+                   </div>
+                </div> 
+                <div class="col-md-2 wow pulse" data-wow-duration="1.2s"><span class="operating-time">Доставка курьером<br>
+по вашему адресу<br>от 300 руб.</span></div>
+            </div>
+        </div>
+    </div>
+    </div>
+<div class="answers">
+    <div class="wrapper">
+        <div class="container">
+            <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-9"><h5>Ответы на ваши вопросы</h5></div>
+            <div class="col-md-1"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-1"><img src="img/question.png"></div>
+                <div class="col-md-1"></div>
+                <div class="col-md-7"><h6>Как сделать заказ?</h6></div>
+                <div class="col-md-2"><a id="clickme"><span class="resize">cвернуть<img src="img/arrow-up.png" alt=""></span></a>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+            <div id="hidden">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-1"><span class="number1">1.</span></div>
+                <div class="col-md-8"><span class="aside1">У нас можно заказать флаеры, афиши, бланки, печати, штампы, вывески, лайтбоксы, цветные объемные<br>буквы с подсветкой и штендеры. Современное оборудование. Если вам нужна оперативная печать<br>полиграфической продукции высочайшего качества, тогда вы попали в нужное место.</span></div>
+                <div class="col-md-1"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-1"><span class="number2">2.</span></div>
+                <div class="col-md-8"><span class="aside2">Лучшие специалисты. Каждый сотрудник нашего центра обладает хорошим опытом и готов приложить<br>максимум усилий для выполнения вашего заказа. Высокая скорость работы.</span></div>
+                <div class="col-md-1"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-1"><span class="number3">3.</span></div>
+                <div class="col-md-8"><span class="aside3">Благодаря максимальной автоматизации процесса и тщательной подготовке сотрудников все заказы (оперативная цветная печать, изготовление наружной рекламы) выполняются в минимальные сроки.</span></div>
+                <div class="col-md-1"></div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="request-form wow bounceInUp">
+     <div class="wrapper">
+        <div class="container">
+            <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-9">
+                <div class="title">Оформить заказ</div>
+                <form name="test" method="post" action="input1.php">
+                   <div class="row">
+                   <div class="col-md-1"></div>
+                    <div class="col-md-5">
+                     <label>
+                      <input class="name" type="text" name="name" placeholder="Ваше имя" value="" required>
+	                </label>
+	                </div>
+	                <div class="col-md-5">
+                    <label>
+                      <input class="company" type="text" name="company" placeholder="Компания" value="" required>
+	                </label>
+	                </div>
+	                </div>
+	                <div class="row">
+                   <div class="col-md-1"></div>
+                    <div class="col-md-5">
+                     <label>
+                      <input class="email" type="email" name="email" placeholder="Введите ваш e-mail" value="" required>
+	                </label>
+	                </div>
+	                <div class="col-md-5">
+                    <label>
+                      <input class="phone" type="tel" name="tel" placeholder="Телефон*" value="" pattern=""7-[0-9]{3}-[0-9]{3}-[0-9]{4}>
+	                </label>
+	                </div>
+	                </div>
+	                <div class="row">
+                   <div class="col-md-1"></div>
+                    <div class="col-md-10">
+                     <textarea class="comment" type="text" name="comment" id="" cols="30" rows="3" placeholder="Комментарий" required></textarea>
+	                </div>
+	                </div>
+	                <div class="row">
+	                <div class="col-md-1"></div>
+	                <div class="col-md-4">
+	                <label for='uploaded_file' class="uploaded_file">
+                      <input type="file" name="uploaded_file" id="uploaded_file" >
+                       <img src="img/add-file.png" alt>
+                       <span>Прикрепить файл</span>
+                    </label>
+                    </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4"></div>
+                        <div class="col-md-4">
+                        <input class="submit" type="submit" value="Отправить" name='submit'>
+                        </div>
+                        <div class="col-md-4"></div>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="portfolio">
+     <div class="wrapper">
+        <div class="container">
+           <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-9"><h5>Портфолио</h5></div>
+            <div class="col-md-1"></div>
+            </div>
+            <div class="row">
+            <div class="col-md-2"></div>
+               <div class="carousel-slide col-md-10">
+                <div><img src="../evrika/img/slide1.png" alt="image-slider"></div>
+                <div><img src="../evrika/img/slide2.png" alt="image-slider"></div>
+                <div><img src="../evrika/slide3.png" alt="image-slider"></div>
+                <div><img src="../evrika/slide3.png" alt="image-slider"></div> 
+            </div>
+            <div class="col-md-1"></div>
+            <div class="customized-arrow"></div>
+         </div>
+        </div>
+    </div>
+    </div>
+<div class="footer-map" id="map">
+   <div class="wrapper">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae14e21a6b3e63754b32670d4b06c1cea3433efd7fbc6c90e566462c04b248ee6&amp;width=100%25&amp;height=550&amp;lang=ru_RU&amp;scroll=false"></script>
+    </div> 
+</div>
+
+<script src="libs/slick/slick.min.js"></script>
+<script>$(document).ready(function(){
+$('.carousel-slide').slick({
+    slidesToShow: 3,
+    appendArrows: $('.customized-arrow'),
+    prevArrow: '<img src="img/slider-prev.png" alt="" style="width: 15px; height: 15px;" id="slider-prev">',
+    nextArrow: '<img src="img/slider-next.png" alt="" style="width: 15px; height: 15px;" id="slider-next">'
+});
+});</script>
+<script>
+    $(document).ready(function(){
+	$(".fixed-menu").on("click","a", function (event) {
+		//отменяем стандартную обработку нажатия по ссылке
+		event.preventDefault();
+
+		//забираем идентификатор бока с атрибута href
+		var id  = $(this).attr('href'),
+
+		//узнаем высоту от начала страницы до блока на который ссылается якорь
+			top = $(id).offset().top;
+		
+		//анимируем переход на расстояние - top за 1500 мс
+		$('body,html').animate({scrollTop: top}, 1500);
+	});
+});
+</script>
+<script src="libs/wow.min.js"></script>
+<script>
+$('#clickme').click(function(){
+  $('#hidden').slideToggle(300, function() {
+    $('.request-form').css("margin-top", "100px");
+  });
+});
+</script>
+<script>
+    new WOW().init();
+</script>
+
+</body>
+</html>
